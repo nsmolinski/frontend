@@ -1,0 +1,105 @@
+
+#search {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1225px;
+    height: 150px;
+    background-color: #cb1e1e;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    grid-area: search-container;
+}
+
+.search-container label {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #dfdfdf;
+    color: #cb1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#search-button:hover {
+    background-color: #cacaca;
+}
+
+.pokemon-list {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    grid-area: pokemon-list;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+.pokemon-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 595px;
+    height: 550px;
+    color: rgb(0, 0, 0);
+    grid-area: pokemon-details;
+}
+
+.top {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "search-container search-container"
+        "pokemon-list pokemon-details";
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pokemon-item {
+    width: 170px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.pokemon-info div:nth-child(2){
+    font-size: 15px;
+}
+.pokemon-info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
